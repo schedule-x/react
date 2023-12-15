@@ -1,5 +1,13 @@
 {
   "name": "@schedule-x/react",
+  "description": "React components for ScheduleX",
+  "keywords": [
+    "calendar",
+    "event",
+    "dark-mode",
+    "internationalization",
+    "react"
+  ],
   "version": "0.2.0",
   "type": "module",
   "scripts": {
@@ -8,9 +16,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "peerDependencies": {
+    "@schedule-x/calendar": "~0.2.0",
+    "react": "^16.7.0 || ^17 || ^18",
+    "react-dom": "^16.7.0 || ^17 || ^18"
   },
   "devDependencies": {
     "@schedule-x/eslint-config": "^0.2.0",
@@ -25,5 +34,10 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schedule-x/react"
+  },
+  "homepage": "https://schedule-x.dev"
 }
