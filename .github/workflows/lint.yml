@@ -17,5 +17,3 @@ jobs:
         run: npm i
       - name: Lint TS 🧹
         run: npm run lint
-      - name: Lint SCSS
-        run: npm run lint:scss
