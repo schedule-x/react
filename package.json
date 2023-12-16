@@ -1,5 +1,8 @@
 {
   "name": "@schedule-x/react",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "React components for ScheduleX",
   "keywords": [
     "calendar",
@@ -11,7 +14,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
-  "version": "0.2.0",
+  "version": "0.3.0-alpha.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,7 +22,8 @@
     "test": "./node_modules/.bin/cypress run",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 5",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "publish": "npm run build && npm publish"
   },
   "peerDependencies": {
     "@schedule-x/calendar": "^0.3.0-alpha.0",
