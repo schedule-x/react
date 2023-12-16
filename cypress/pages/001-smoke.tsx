@@ -15,6 +15,7 @@ import {
 import './index.css'
 import '@schedule-x/theme-default/dist/index.css'
 
+// eslint-disable-next-line react-refresh/only-export-components
 function App() {
   const calendarApp = useCalendarApp({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
