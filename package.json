@@ -23,7 +23,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 5",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "publish": "npm run build && npm publish"
+    "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
     "@schedule-x/calendar": "^0.3.0-alpha.0",
