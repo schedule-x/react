@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sx-react-calendar-wrapper {
+  width: 90%;
+  height: 800px;
+  max-height: 90vh;
+}
