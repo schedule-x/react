@@ -11,7 +11,6 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -19,12 +18,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    /* Lib */
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
   },
   "include": [
-    "cypress/**/*.cy.ts",
-    "cypress",
-    "development"
+    "src"
   ],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "types": ["vite/client", "cypress", "node"]
+  "types": ["vite/client", "node"]
 }
