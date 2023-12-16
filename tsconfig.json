@@ -18,13 +18,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "cypress/**/*.cy.ts",
-    "cypress",
-    "development"
-  ],
+  "include": ["cypress/**/*.cy.ts", "cypress", "development"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "types": ["vite/client", "cypress", "node"]
 }

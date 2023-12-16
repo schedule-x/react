@@ -6,10 +6,8 @@ import postcss from 'rollup-plugin-postcss'
 import { readFile } from 'fs/promises'
 
 const pJson = JSON.parse(
-    await readFile(
-        new URL('./package.json', import.meta.url)
-    )
-);
+  await readFile(new URL('./package.json', import.meta.url))
+)
 
 export default {
   input: 'src/index.tsx',

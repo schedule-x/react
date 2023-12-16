@@ -1,5 +1,5 @@
-import {CalendarApp} from '@schedule-x/calendar'
-import {useEffect} from 'react'
+import { CalendarApp } from '@schedule-x/calendar'
+import { useEffect } from 'react'
 
 type props = {
   calendarApp: CalendarApp
