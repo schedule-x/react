@@ -26,7 +26,7 @@
     "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "@schedule-x/calendar": "^0.3.0-alpha.0",
+    "@schedule-x/calendar": "^0.4.0",
     "react": "^16.7.0 || ^17 || ^18",
     "react-dom": "^16.7.0 || ^17 || ^18"
   },
