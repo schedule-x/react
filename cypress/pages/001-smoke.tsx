@@ -5,13 +5,13 @@ import '@fontsource/open-sans/700.css'
 import '@fontsource/open-sans/700-italic.css'
 import ReactDOM from 'react-dom/client'
 import React from 'react'
-import { Calendar, useCalendarApp } from '../..'
+import {Calendar, useCalendarApp} from "../../src";
 import {
   viewDay,
   viewMonthAgenda,
   viewMonthGrid,
   viewWeek,
-} from '@schedule-x/calendar'
+} from '../../../schedule-x/packages/calendar'
 import './index.css'
 import '@schedule-x/theme-default/dist/index.css'
 

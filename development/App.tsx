@@ -5,8 +5,10 @@ import {
   viewMonthAgenda,
   viewMonthGrid,
   viewWeek,
-} from '@schedule-x/calendar'
+} from '../../schedule-x/packages/calendar'
 import '@schedule-x/theme-default/dist/index.css'
+import {createDragAndDropPlugin} from "@schedule-x/drag-and-drop";
+import {createEventModalPlugin} from "@schedule-x/event-modal";
 
 function App() {
   const calendarApp = useCalendarApp({
@@ -15,10 +17,14 @@ function App() {
       {
         id: '1',
         title: 'Event 1',
-        start: '2023-12-15 10:00',
-        end: '2023-12-15 12:00',
+        start: '2023-12-22 05:00',
+        end: '2023-12-22 07:00',
       },
     ],
+    plugins: [
+      createDragAndDropPlugin(),
+      createEventModalPlugin(),
+    ]
   })
 
   return (

@@ -1,4 +1,4 @@
-import { CalendarConfig, createCalendar } from '@schedule-x/calendar'
+import { CalendarConfig, createCalendar } from '../../schedule-x/packages/calendar'
 import { useState } from 'react'
 
 export function useCalendarApp(config: CalendarConfig) {
