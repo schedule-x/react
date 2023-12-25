@@ -1,12 +1,17 @@
-import { CalendarApp } from '../../schedule-x/packages/calendar'
+import { CalendarApp } from '@schedule-x/calendar'
 import React, {createElement, Fragment, ReactElement, useEffect, useState} from 'react'
 import {createPortal} from "react-dom";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type ReactComponent = React.ComponentType<any>
+
 type props = {
   calendarApp: CalendarApp
+  customComponents?: {
+    timeGridEvent?: ReactComponent
+    dateGridEvent?: ReactComponent
+  }
 }
-
-type ReactComponent = React.ComponentType<unknown>
 
 type CustomComponentMeta = {
   Component: ReactElement
@@ -16,8 +21,7 @@ type CustomComponentMeta = {
 type CustomComponents = CustomComponentMeta[]
 
 const createCustomTimeGridEvent = (
-  customComponents: CustomComponents,
-  setCustomComponents: React.Dispatch<React.SetStateAction<CustomComponents>>,
+  setCustomComponent: (component: CustomComponentMeta) => void,
   customTimeGridEventComponent: ReactComponent,
 ) => (
   wrapperElement: HTMLElement,
@@ -27,28 +31,36 @@ const createCustomTimeGridEvent = (
     Component: createElement(customTimeGridEventComponent, props),
     wrapperElement,
   }
-
-  setCustomComponents([
-    ...customComponents,
-    componentMeta,
-  ])
+  setCustomComponent(componentMeta)
 }
 
-const LolComponent = () => {
-  return (
-    <div>
-      LOL hiiii hellooooo
-      input: <input type="checkbox" />
-    </div>
-  )
-}
-
-export function Calendar({ calendarApp }: props) {
+export function Calendar({ calendarApp, customComponents }: props) {
   const randomId = 'sx' + Math.random().toString(36).substring(7)
-  const [customComponents, setCustomComponents] = useState<CustomComponents>([])
-  calendarApp._setCustomComponentFn('timeGridEvent', createCustomTimeGridEvent(customComponents, setCustomComponents, LolComponent))
+  const [customComponentsMeta, setCustomComponentsMeta] = useState<CustomComponents>([])
+
+  const setComponent = (component: CustomComponentMeta) => {
+    setCustomComponentsMeta((prev) => {
+      const newComponents = [...prev]
+      const ccid = component.wrapperElement.dataset.ccid
+      const existingComponent = newComponents.find((c) => c.wrapperElement.dataset.ccid === ccid)
+
+      if (existingComponent) {
+        newComponents.splice(newComponents.indexOf(existingComponent), 1)
+      }
+      
+      return [...newComponents, component]
+    })
+  }
+
 
   useEffect(() => {
+    for (const [componentName, Component] of Object.entries(customComponents || {})) {
+      calendarApp._setCustomComponentFn(
+        componentName as 'timeGridEvent' | 'dateGridEvent',
+        createCustomTimeGridEvent(setComponent, Component)
+      )
+    }
+
     calendarApp.render(document.getElementById(randomId) as HTMLElement)
   }, [calendarApp, randomId])
 
@@ -57,7 +69,7 @@ export function Calendar({ calendarApp }: props) {
       <Fragment>
         <div className="sx-react-calendar-wrapper" id={randomId}></div>
 
-        {customComponents.map(({ Component, wrapperElement }) => {
+        {customComponentsMeta.map(({ Component, wrapperElement }) => {
           return createPortal(Component, wrapperElement)
         })}
       </Fragment>
