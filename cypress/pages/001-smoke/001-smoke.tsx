@@ -11,7 +11,7 @@ import {
   viewMonthAgenda,
   viewMonthGrid,
   viewWeek,
-} from '../../../../schedule-x/packages/calendar'
+} from '@schedule-x/calendar'
 import '../index.css'
 import '@schedule-x/theme-default/dist/index.css'
 
