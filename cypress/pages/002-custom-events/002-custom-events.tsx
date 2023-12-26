@@ -5,13 +5,13 @@ import '@fontsource/open-sans/700.css'
 import '@fontsource/open-sans/700-italic.css'
 import ReactDOM from 'react-dom/client'
 import React from 'react'
-import { Calendar, useCalendarApp } from '../../../src'
+import { Calendar, useCalendarApp } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
   viewMonthGrid,
   viewWeek,
-} from '../../../../schedule-x/packages/calendar'
+} from '@schedule-x/calendar'
 import '../index.css'
 import '@schedule-x/theme-default/dist/index.css'
 import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
