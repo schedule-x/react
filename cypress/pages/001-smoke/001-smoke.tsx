@@ -5,7 +5,7 @@ import '@fontsource/open-sans/700.css'
 import '@fontsource/open-sans/700-italic.css'
 import ReactDOM from 'react-dom/client'
 import React from 'react'
-import { Calendar, useCalendarApp } from '../../../src'
+import { Calendar, useCalendarApp } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
