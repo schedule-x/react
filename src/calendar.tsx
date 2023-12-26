@@ -17,21 +17,22 @@ type props = {
   }
 }
 
-const createCustomTimeGridEvent =
+const createCustomComponentFn =
   (
     setCustomComponent: (component: CustomComponentMeta) => void,
-    customTimeGridEventComponent: ReactComponent
-  ) =>
-  (wrapperElement: HTMLElement, props: Record<string, unknown>) => {
-    const componentMeta: CustomComponentMeta = {
-      Component: createElement(customTimeGridEventComponent, props),
+    customComponent: ReactComponent
+  ) => (
+    wrapperElement: HTMLElement,
+    props: Record<string, unknown>
+  ) => {
+    setCustomComponent({
+      Component: createElement(customComponent, props),
       wrapperElement,
-    }
-    setCustomComponent(componentMeta)
+    })
   }
 
 export function Calendar({ calendarApp, customComponents }: props) {
-  const randomId = 'sx' + Math.random().toString(36).substring(7)
+  const randomId = 'sx' + Math.random().toString(36).substring(2, 11)
   const [customComponentsMeta, setCustomComponentsMeta] =
     useState<CustomComponentsMeta>([])
 
@@ -57,7 +58,7 @@ export function Calendar({ calendarApp, customComponents }: props) {
     )) {
       calendarApp._setCustomComponentFn(
         componentName as 'timeGridEvent' | 'dateGridEvent',
-        createCustomTimeGridEvent(setComponent, Component)
+        createCustomComponentFn(setComponent, Component)
       )
     }
 
