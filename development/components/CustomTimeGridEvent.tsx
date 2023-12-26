@@ -1,9 +1,9 @@
 type props = {
   calendarEvent: {
-    id: string | number;
-    title: string;
-    start: string;
-    end: string;
+    id: string | number
+    title: string
+    start: string
+    end: string
   }
 }
 

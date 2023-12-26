@@ -20,7 +20,7 @@ export default function CustomDateGridEvent({ calendarEvent }: props) {
         border: '1px solid white',
       }}
     >
-      {calendarEvent.title}
+      <span>{calendarEvent.title}</span>|<span>ID{calendarEvent.id}</span>
     </div>
   )
 }

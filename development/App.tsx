@@ -7,10 +7,10 @@ import {
   viewWeek,
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
-import {createDragAndDropPlugin} from "@schedule-x/drag-and-drop";
-import {createEventModalPlugin} from "@schedule-x/event-modal";
-import CustomTimeGridEvent from "./components/CustomTimeGridEvent.tsx";
-import CustomDateGridEvent from "./components/CustomDateGridEvent.tsx";
+import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
+import { createEventModalPlugin } from '@schedule-x/event-modal'
+import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
+import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
 
 function App() {
   const calendarApp = useCalendarApp({
@@ -42,10 +42,7 @@ function App() {
         end: '2023-12-23 07:00',
       },
     ],
-    plugins: [
-      createDragAndDropPlugin(),
-      createEventModalPlugin(),
-    ]
+    plugins: [createDragAndDropPlugin(), createEventModalPlugin()],
   })
 
   return (
