@@ -1,12 +1,10 @@
 import { CalendarApp } from '@schedule-x/calendar'
-import React, {
-  createElement,
-  Fragment,
-  ReactElement,
-  useEffect,
-  useState,
-} from 'react'
+import React, { createElement, Fragment, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
+import {
+  CustomComponentMeta,
+  CustomComponentsMeta,
+} from './types/custom-components.ts'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -18,13 +16,6 @@ type props = {
     dateGridEvent?: ReactComponent
   }
 }
-
-type CustomComponentMeta = {
-  Component: ReactElement
-  wrapperElement: HTMLElement
-}
-
-type CustomComponents = CustomComponentMeta[]
 
 const createCustomTimeGridEvent =
   (
@@ -42,7 +33,7 @@ const createCustomTimeGridEvent =
 export function Calendar({ calendarApp, customComponents }: props) {
   const randomId = 'sx' + Math.random().toString(36).substring(7)
   const [customComponentsMeta, setCustomComponentsMeta] =
-    useState<CustomComponents>([])
+    useState<CustomComponentsMeta>([])
 
   const setComponent = (component: CustomComponentMeta) => {
     setCustomComponentsMeta((prev) => {
