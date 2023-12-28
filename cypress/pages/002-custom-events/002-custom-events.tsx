@@ -5,7 +5,7 @@ import '@fontsource/open-sans/700.css'
 import '@fontsource/open-sans/700-italic.css'
 import ReactDOM from 'react-dom/client'
 import React from 'react'
-import { Calendar, useCalendarApp } from '../../..'
+import { ScheduleXCalendar, useCalendarApp } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
@@ -16,6 +16,8 @@ import '../index.css'
 import '@schedule-x/theme-default/dist/index.css'
 import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
+import CustomMonthAgendaEvent from "./components/CustomMonthAgendaEvent.tsx";
+import CustomMonthGridEvent from "./components/CustomMonthGridEvent.tsx";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
@@ -42,11 +44,13 @@ function App() {
   return (
     <>
       <div className="schedule-x-calendar">
-        <Calendar
+        <ScheduleXCalendar
           calendarApp={calendarApp}
           customComponents={{
             timeGridEvent: CustomTimeGridEvent,
             dateGridEvent: CustomDateGridEvent,
+            monthAgendaEvent: CustomMonthAgendaEvent,
+            monthGridEvent: CustomMonthGridEvent,
           }}
         />
       </div>

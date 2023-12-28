@@ -14,6 +14,8 @@ type props = {
   customComponents?: {
     timeGridEvent?: ReactComponent
     dateGridEvent?: ReactComponent
+    monthGridEvent?: ReactComponent
+    monthAgendaEvent?: ReactComponent
   }
 }
 
@@ -21,17 +23,15 @@ const createCustomComponentFn =
   (
     setCustomComponent: (component: CustomComponentMeta) => void,
     customComponent: ReactComponent
-  ) => (
-    wrapperElement: HTMLElement,
-    props: Record<string, unknown>
-  ) => {
+  ) =>
+  (wrapperElement: HTMLElement, props: Record<string, unknown>) => {
     setCustomComponent({
       Component: createElement(customComponent, props),
       wrapperElement,
     })
   }
 
-export function Calendar({ calendarApp, customComponents }: props) {
+export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   const randomId = 'sx' + Math.random().toString(36).substring(2, 11)
   const [customComponentsMeta, setCustomComponentsMeta] =
     useState<CustomComponentsMeta>([])
