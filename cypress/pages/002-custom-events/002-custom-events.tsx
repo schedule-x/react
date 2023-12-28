@@ -16,8 +16,8 @@ import '../index.css'
 import '@schedule-x/theme-default/dist/index.css'
 import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
-import CustomMonthAgendaEvent from "./components/CustomMonthAgendaEvent.tsx";
-import CustomMonthGridEvent from "./components/CustomMonthGridEvent.tsx";
+import CustomMonthAgendaEvent from './components/CustomMonthAgendaEvent.tsx'
+import CustomMonthGridEvent from './components/CustomMonthGridEvent.tsx'
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {

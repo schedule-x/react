@@ -1,4 +1,4 @@
-import {createCalendarHeaderPageObject} from "@schedule-x/e2e-testing";
+import { createCalendarHeaderPageObject } from '@schedule-x/e2e-testing'
 
 const calendarHeader = createCalendarHeaderPageObject()
 
