@@ -1,5 +1,5 @@
 import './App.css'
-import { Calendar, useCalendarApp } from '../src'
+import { ScheduleXCalendar, useCalendarApp } from '../src'
 import {
   viewDay,
   viewMonthAgenda,
@@ -48,11 +48,13 @@ function App() {
   return (
     <>
       <div>
-        <Calendar
+        <ScheduleXCalendar
           calendarApp={calendarApp}
           customComponents={{
             timeGridEvent: CustomTimeGridEvent,
             dateGridEvent: CustomDateGridEvent,
+            monthAgendaEvent: CustomDateGridEvent,
+            monthGridEvent: CustomDateGridEvent,
           }}
         />
       </div>
