@@ -9,10 +9,8 @@
     },
     {
       "groupName": "Schedule-X monorepo packages",
-      "packagePatterns": ["^@schedule-x.*"],
-      "schedule": ["0/15 * * * *"]
+      "packagePatterns": ["^@schedule-x.*"]
     }
   ],
-  "schedule": ["before 5am on the first day of the month"],
   "ignoreDeps": ["react", "react-dom"]
 }
