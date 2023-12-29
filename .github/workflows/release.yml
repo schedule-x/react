@@ -3,11 +3,16 @@ on:
   push:
     branches:
       - main
+      - 'ci/semantic_release'
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
     steps:
       - name: Checkout ✅
         uses: actions/checkout@v3
@@ -17,7 +22,7 @@ jobs:
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3
         with:
-          node-version: "lts/*"
+          node-version: 'lts/*'
       - name: Install dependencies 🛠️
         run: npm ci --ignore-scripts
       - name: Build 📦
