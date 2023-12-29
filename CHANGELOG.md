@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/schedule-x/react/compare/v1.1.0...v1.1.1) (2023-12-29)
+
+
+### Bug Fixes
+
+* **event-modal:** make icon color in event modal reactive to theme changes ([96f68d7](https://github.com/schedule-x/react/commit/96f68d7025531f97f245822e1c177b3119f2ba1e))
+
 # [1.1.0](https://github.com/schedule-x/react/compare/v1.0.0...v1.1.0) (2023-12-29)
 
 
