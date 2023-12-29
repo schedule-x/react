@@ -2,12 +2,12 @@
   "release": {
     "branches": [
       "main",
-      "ci/semantic-release"
+      "ci/semantic_release"
     ]
   },
   "branches": [
     "main",
-    "ci/semantic-release"
+    "ci/semantic_release"
   ],
   "tagFormat": "v${version}",
   "plugins": [
