@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/schedule-x/react/compare/v1.0.0...v1.1.0) (2023-12-29)
+
+
+### Features
+
+* **calendar:** add callbacks for clicking on date and times ([070bbe7](https://github.com/schedule-x/react/commit/070bbe79b9fdcf2b7aee3adeda5d10e30ae3d93f))
+
 # 1.0.0 (2023-12-29)
 
 
