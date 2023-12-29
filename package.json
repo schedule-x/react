@@ -26,7 +26,7 @@
     "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "@schedule-x/calendar": "^0.7.0",
+    "@schedule-x/calendar": "^0.8.0",
     "react": "^16.7.0 || ^17 || ^18",
     "react-dom": "^16.7.0 || ^17 || ^18"
   },
@@ -35,12 +35,12 @@
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
-    "@schedule-x/drag-and-drop": "^0.7.0",
-    "@schedule-x/e2e-testing": "^0.7.0",
-    "@schedule-x/eslint-config": "^0.7.0",
-    "@schedule-x/event-modal": "^0.7.0",
-    "@schedule-x/prettier-config": "^0.7.0",
-    "@schedule-x/theme-default": "^0.7.0",
+    "@schedule-x/drag-and-drop": "^0.8.0",
+    "@schedule-x/e2e-testing": "^0.8.0",
+    "@schedule-x/eslint-config": "^0.8.0",
+    "@schedule-x/event-modal": "^0.8.0",
+    "@schedule-x/prettier-config": "^0.8.0",
+    "@schedule-x/theme-default": "^0.8.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/react": "^18.2.43",
