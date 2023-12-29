@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":disableDependencyDashboard"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "devDependencies (non-major)"
+    },
+    {
+      "groupName": "Schedule-X monorepo packages",
+      "packagePatterns": ["^@schedule-x.*"],
+      "schedule": ["*/15 * * * *"]
+    }
+  ],
+  "schedule": ["before 5am on the first day of the month"],
+  "ignoreDeps": ["react", "react-dom"]
+}
