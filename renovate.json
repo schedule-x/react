@@ -10,7 +10,7 @@
     {
       "groupName": "Schedule-X monorepo packages",
       "packagePatterns": ["^@schedule-x.*"],
-      "schedule": ["every 15 minutes"]
+      "schedule": ["0,15,30,45 * * * *"]
     }
   ],
   "schedule": ["before 5am on the first day of the month"],
