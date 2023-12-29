@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - semantic-release
+      - "ci/semantic-release"
 
 jobs:
   release:
