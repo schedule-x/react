@@ -1,10 +1,10 @@
 import { createCalendarHeaderPageObject } from '@schedule-x/e2e-testing'
 
-describe('Smoke test with regular React', () => {
+describe('Smoke test', () => {
   const calendarHeader = createCalendarHeaderPageObject()
 
   beforeEach(() => {
-    cy.visit('http://localhost:5173')
+    cy.visit('/cypress/pages/001-smoke/001-smoke.html')
   })
 
   it('should navigate between views', () => {

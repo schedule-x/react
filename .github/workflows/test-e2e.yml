@@ -1,4 +1,4 @@
-name: End-to-end tests in React
+name: End-to-end tests
 on:
   pull_request:
     paths:
@@ -11,16 +11,13 @@ on:
 jobs:
   chrome:
     runs-on: ubuntu-latest
-    env:
-      TEST_BASE_URL: http://localhost:3000
     steps:
       - uses: actions/checkout@v4
       - name: Install dependencies ⬇️
         run: npm install
       - name: Build lib 🔨
         run: npm run build
-        working-directory: ./cypress/pages/next-app
-      - name: Start server 🚀
-        run: npm run dev
-      - name: Run Cypress
-        run: ./node_modules/.bin/cypress run --spec "cypress/e2e/react/**/*"
+      - uses: cypress-io/github-action@v4
+        with:
+          browser: chrome
+          start: npm run dev
