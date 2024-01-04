@@ -1,7 +1,7 @@
 'use client'
 import styles from './page.module.css'
 // import { Calendar, useCalendarApp } from '../../../..'
-import { useCalendarApp, ScheduleXCalendar } from '../../../..'
+import { useCalendarApp, ScheduleXCalendar } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
