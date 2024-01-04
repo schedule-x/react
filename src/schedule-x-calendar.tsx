@@ -66,7 +66,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
       )
     }
 
-    const calendarElement = document.getElementById(randomId);
+    const calendarElement = document.getElementById(randomId)
     if (!calendarElement) return
 
     calendarApp.render(calendarElement as HTMLElement)
