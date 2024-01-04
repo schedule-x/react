@@ -13,11 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies ⬇️
+      - name: Install dependencies root dir ⬇️
         run: npm install
+      - name: Install dependencies next-app dir ⬇️
+        run: npm install
+        working-directory: ./cypress/pages/next-app
       - name: Build lib 🔨
         run: npm run build
-      - uses: cypress-io/github-action@v4
-        with:
-          browser: chrome
-          start: npm run dev
+      - name: Start server 🚀
+        run: npm run dev
+        working-directory: ./cypress/pages/next-app
+      - name: Run Cypress
+        run: ./node_modules/.bin/cypress run --spec "cypress/e2e/nextjs/**/*"
