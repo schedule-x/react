@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/schedule-x/react/compare/v1.2.0...v1.2.1) (2024-01-04)
+
+
+### Bug Fixes
+
+* usage in nextjs ([#22](https://github.com/schedule-x/react/issues/22)) ([70f81df](https://github.com/schedule-x/react/commit/70f81dff94c7c3334cf69ed5935aa4b0fdf6966d))
+
 # [1.2.0](https://github.com/schedule-x/react/compare/v1.1.1...v1.2.0) (2024-01-04)
 
 ### Features
