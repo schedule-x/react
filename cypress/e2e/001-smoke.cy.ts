@@ -1,6 +1,6 @@
 import { createCalendarHeaderPageObject } from '@schedule-x/e2e-testing'
 
-describe('Smoke Test', () => {
+describe('Smoke test with regular React', () => {
   const calendarHeader = createCalendarHeaderPageObject()
 
   beforeEach(() => {
