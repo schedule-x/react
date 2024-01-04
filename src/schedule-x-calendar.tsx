@@ -32,7 +32,7 @@ const createCustomComponentFn =
   }
 
 export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
-  const randomId = 'sx' + Math.random().toString(36).substring(2, 11)
+  const [randomId, setRandomId] = useState('')
   const [customComponentsMeta, setCustomComponentsMeta] =
     useState<CustomComponentsMeta>([])
 
@@ -53,6 +53,10 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }
 
   useEffect(() => {
+    setRandomId('sx' + Math.random().toString(36).substring(2, 11))
+  }, [])
+
+  useEffect(() => {
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
@@ -62,8 +66,11 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
       )
     }
 
-    calendarApp.render(document.getElementById(randomId) as HTMLElement)
-  }, [calendarApp, randomId, customComponents])
+    const calendarElement = document.getElementById(randomId)
+    if (!calendarElement) return
+
+    calendarApp.render(calendarElement as HTMLElement)
+  }, [calendarApp, customComponents, randomId])
 
   return (
     <>
