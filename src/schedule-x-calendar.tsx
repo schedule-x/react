@@ -57,6 +57,8 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }, [])
 
   useEffect(() => {
+    if (typeof window === 'undefined' || !calendarApp) return
+
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
