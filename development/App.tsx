@@ -28,6 +28,7 @@ function App() {
         title: 'Event 1',
         start: '2023-12-22 05:00',
         end: '2023-12-22 07:00',
+        calendarId: 'personal',
       },
       {
         id: '2',
