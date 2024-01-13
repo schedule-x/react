@@ -1,5 +1,9 @@
-import {CalendarApp, CalendarConfig, createCalendar} from '@schedule-x/calendar'
-import {useEffect, useState} from 'react'
+import {
+  CalendarApp,
+  CalendarConfig,
+  createCalendar,
+} from '@schedule-x/calendar'
+import { useEffect, useState } from 'react'
 
 export function useCalendarApp(config: CalendarConfig) {
   const [calendarApp, setCalendarApp] = useState<CalendarApp>()

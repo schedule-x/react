@@ -10,7 +10,7 @@ import {
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
-import {createEventModalPlugin} from "@schedule-x/event-modal";
+import { createEventModalPlugin } from '@schedule-x/event-modal'
 
 export default function Home() {
   const calendarApp = useCalendarApp({
