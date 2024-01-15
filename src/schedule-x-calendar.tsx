@@ -57,7 +57,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }, [])
 
   useEffect(() => {
-    if (!calendarApp) return // in SSR, useCalendarApp will be undefined
+    if (!calendarApp) return // in SSR, calendarApp will be undefined
 
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
