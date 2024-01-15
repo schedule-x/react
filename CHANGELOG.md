@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/schedule-x/react/compare/v1.4.0...v1.5.0) (2024-01-15)
+
+
+### Features
+
+* add useNextCalendarApp hook ([#32](https://github.com/schedule-x/react/issues/32)) ([2d3c561](https://github.com/schedule-x/react/commit/2d3c561c479eeea38011588842484e140416644c))
+
 # [1.4.0](https://github.com/schedule-x/react/compare/v1.3.2...v1.4.0) (2024-01-13)
 
 ### Features
