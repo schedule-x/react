@@ -10,7 +10,7 @@ import {
 type ReactComponent = React.ComponentType<any>
 
 type props = {
-  calendarApp: CalendarApp
+  calendarApp: CalendarApp | undefined // undefined allowed to prevent errors in SSR
   customComponents?: {
     timeGridEvent?: ReactComponent
     dateGridEvent?: ReactComponent
@@ -57,6 +57,8 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }, [])
 
   useEffect(() => {
+    if (!calendarApp) return // in SSR, calendarApp will be undefined
+
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
