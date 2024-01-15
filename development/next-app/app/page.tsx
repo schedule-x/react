@@ -1,7 +1,7 @@
 'use client'
 import styles from './page.module.css'
 // import { Calendar, useCalendarApp } from '../../../..'
-import { useCalendarApp, ScheduleXCalendar } from '../../..'
+import { useNextCalendarApp, ScheduleXCalendar } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
@@ -12,7 +12,7 @@ import '@schedule-x/theme-default/dist/index.css'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
 
 export default function Home() {
-  const calendarApp = useCalendarApp({
+  const calendarApp = useNextCalendarApp({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
     defaultView: viewWeek.name,
     events: [
@@ -25,6 +25,21 @@ export default function Home() {
     ],
     selectedDate: '2023-12-15',
     plugins: [createDragAndDropPlugin()],
+    calendars: {
+      school: {
+        colorName: 'school',
+        lightColors: {
+          main: '#1c7df9',
+          container: '#d2e7ff',
+          onContainer: '#002859',
+        },
+        darkColors: {
+          main: '#c0dfff',
+          onContainer: '#dee6ff',
+          container: '#426aa2',
+        },
+      },
+    },
   })
 
   return (
