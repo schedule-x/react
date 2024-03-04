@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.1](https://github.com/schedule-x/react/compare/v1.18.0...v1.18.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v14.1.1 ([#66](https://github.com/schedule-x/react/issues/66)) ([fd450fa](https://github.com/schedule-x/react/commit/fd450fac1d239d85b221fbd2c8347b07b757b122))
+
 # [1.18.0](https://github.com/schedule-x/react/compare/v1.17.0...v1.18.0) (2024-03-04)
 
 
