@@ -27,6 +27,7 @@
   },
   "peerDependencies": {
     "@schedule-x/calendar": "1.21.0",
+    "@schedule-x/shared": "^1.21.0",
     "react": "^16.7.0 || ^17 || ^18",
     "react-dom": "^16.7.0 || ^17 || ^18"
   },

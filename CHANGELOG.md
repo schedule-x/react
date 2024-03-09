@@ -46,101 +46,87 @@ All notable changes to this project will be documented in this file. See [Conven
 
 # [1.15.0](https://github.com/schedule-x/react/compare/v1.14.0...v1.15.0) (2024-02-10)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.17.0 ([#57](https://github.com/schedule-x/react/issues/57)) ([4afd480](https://github.com/schedule-x/react/commit/4afd480390b67912d60b9926a713a2e783ad72ac))
+- update schedule-x monorepo packages to v1.17.0 ([#57](https://github.com/schedule-x/react/issues/57)) ([4afd480](https://github.com/schedule-x/react/commit/4afd480390b67912d60b9926a713a2e783ad72ac))
 
 # [1.14.0](https://github.com/schedule-x/react/compare/v1.13.0...v1.14.0) (2024-02-10)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.17.0 ([#56](https://github.com/schedule-x/react/issues/56)) ([d6122c1](https://github.com/schedule-x/react/commit/d6122c12d869d75c2c7e44eb2df871274991a827))
+- update schedule-x monorepo packages to v1.17.0 ([#56](https://github.com/schedule-x/react/issues/56)) ([d6122c1](https://github.com/schedule-x/react/commit/d6122c12d869d75c2c7e44eb2df871274991a827))
 
 # [1.13.0](https://github.com/schedule-x/react/compare/v1.12.0...v1.13.0) (2024-02-10)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.16.0 ([#55](https://github.com/schedule-x/react/issues/55)) ([e9d781e](https://github.com/schedule-x/react/commit/e9d781e1d9e4943439d674245f566401d161e036))
+- update schedule-x monorepo packages to v1.16.0 ([#55](https://github.com/schedule-x/react/issues/55)) ([e9d781e](https://github.com/schedule-x/react/commit/e9d781e1d9e4943439d674245f566401d161e036))
 
 # [1.12.0](https://github.com/schedule-x/react/compare/v1.11.0...v1.12.0) (2024-02-06)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.15.0 ([#53](https://github.com/schedule-x/react/issues/53)) ([8e58292](https://github.com/schedule-x/react/commit/8e58292765a7613d00e1bb8f56bc71605b4c891b))
+- update schedule-x monorepo packages to v1.15.0 ([#53](https://github.com/schedule-x/react/issues/53)) ([8e58292](https://github.com/schedule-x/react/commit/8e58292765a7613d00e1bb8f56bc71605b4c891b))
 
 # [1.11.0](https://github.com/schedule-x/react/compare/v1.10.1...v1.11.0) (2024-02-05)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.14.0 ([#51](https://github.com/schedule-x/react/issues/51)) ([8a30fc0](https://github.com/schedule-x/react/commit/8a30fc0a0b180dd8f3b5aefa0b3863966ad5a1c4))
+- update schedule-x monorepo packages to v1.14.0 ([#51](https://github.com/schedule-x/react/issues/51)) ([8a30fc0](https://github.com/schedule-x/react/commit/8a30fc0a0b180dd8f3b5aefa0b3863966ad5a1c4))
 
 ## [1.10.1](https://github.com/schedule-x/react/compare/v1.10.0...v1.10.1) (2024-02-02)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.12.2 ([#48](https://github.com/schedule-x/react/issues/48)) ([dc9cfba](https://github.com/schedule-x/react/commit/dc9cfba309c545e9226574bb4487b549c823da51))
+- update schedule-x monorepo packages to v1.12.2 ([#48](https://github.com/schedule-x/react/issues/48)) ([dc9cfba](https://github.com/schedule-x/react/commit/dc9cfba309c545e9226574bb4487b549c823da51))
 
 # [1.10.0](https://github.com/schedule-x/react/compare/v1.9.0...v1.10.0) (2024-01-29)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.12.1 ([#47](https://github.com/schedule-x/react/issues/47)) ([e2a56df](https://github.com/schedule-x/react/commit/e2a56dfa77ffa8da3fdddbc7b092c21865971127))
+- update schedule-x monorepo packages to v1.12.1 ([#47](https://github.com/schedule-x/react/issues/47)) ([e2a56df](https://github.com/schedule-x/react/commit/e2a56dfa77ffa8da3fdddbc7b092c21865971127))
 
 # [1.9.0](https://github.com/schedule-x/react/compare/v1.8.0...v1.9.0) (2024-01-27)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.12.0 ([#45](https://github.com/schedule-x/react/issues/45)) ([456ccd4](https://github.com/schedule-x/react/commit/456ccd43c55cc8831958ab59b9cfe2a7a2549da7))
+- update schedule-x monorepo packages to v1.12.0 ([#45](https://github.com/schedule-x/react/issues/45)) ([456ccd4](https://github.com/schedule-x/react/commit/456ccd43c55cc8831958ab59b9cfe2a7a2549da7))
 
 # [1.8.0](https://github.com/schedule-x/react/compare/v1.7.0...v1.8.0) (2024-01-27)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.11.0 ([#44](https://github.com/schedule-x/react/issues/44)) ([a50d7f9](https://github.com/schedule-x/react/commit/a50d7f95f6c4e9010f080f697117f57a7294623b))
+- update schedule-x monorepo packages to v1.11.0 ([#44](https://github.com/schedule-x/react/issues/44)) ([a50d7f9](https://github.com/schedule-x/react/commit/a50d7f95f6c4e9010f080f697117f57a7294623b))
 
 # [1.7.0](https://github.com/schedule-x/react/compare/v1.6.2...v1.7.0) (2024-01-26)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.10.0 ([#43](https://github.com/schedule-x/react/issues/43)) ([7b3a640](https://github.com/schedule-x/react/commit/7b3a6406e26751b1b35eb08831339db85e074508))
+- update schedule-x monorepo packages to v1.10.0 ([#43](https://github.com/schedule-x/react/issues/43)) ([7b3a640](https://github.com/schedule-x/react/commit/7b3a6406e26751b1b35eb08831339db85e074508))
 
 ## [1.6.2](https://github.com/schedule-x/react/compare/v1.6.1...v1.6.2) (2024-01-22)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.9.1 ([#39](https://github.com/schedule-x/react/issues/39)) ([42e347f](https://github.com/schedule-x/react/commit/42e347f47c9a49222b9be148b8cb3fc0997b56ad))
+- update schedule-x monorepo packages to v1.9.1 ([#39](https://github.com/schedule-x/react/issues/39)) ([42e347f](https://github.com/schedule-x/react/commit/42e347f47c9a49222b9be148b8cb3fc0997b56ad))
 
 ## [1.6.1](https://github.com/schedule-x/react/compare/v1.6.0...v1.6.1) (2024-01-19)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency next to v14.1.0 ([#36](https://github.com/schedule-x/react/issues/36)) ([6bafa5b](https://github.com/schedule-x/react/commit/6bafa5b1fa7cad179888a7b92449bc4cd3b3bdde))
+- **deps:** update dependency next to v14.1.0 ([#36](https://github.com/schedule-x/react/issues/36)) ([6bafa5b](https://github.com/schedule-x/react/commit/6bafa5b1fa7cad179888a7b92449bc4cd3b3bdde))
 
 # [1.6.0](https://github.com/schedule-x/react/compare/v1.5.0...v1.6.0) (2024-01-17)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.9.0 ([#34](https://github.com/schedule-x/react/issues/34)) ([7dccabb](https://github.com/schedule-x/react/commit/7dccabb57e7ca8d6c2bd4e71dd496fa85ef89306))
+- update schedule-x monorepo packages to v1.9.0 ([#34](https://github.com/schedule-x/react/issues/34)) ([7dccabb](https://github.com/schedule-x/react/commit/7dccabb57e7ca8d6c2bd4e71dd496fa85ef89306))
 
 # [1.5.0](https://github.com/schedule-x/react/compare/v1.4.0...v1.5.0) (2024-01-15)
 
-
 ### Features
 
-* add useNextCalendarApp hook ([#32](https://github.com/schedule-x/react/issues/32)) ([2d3c561](https://github.com/schedule-x/react/commit/2d3c561c479eeea38011588842484e140416644c))
+- add useNextCalendarApp hook ([#32](https://github.com/schedule-x/react/issues/32)) ([2d3c561](https://github.com/schedule-x/react/commit/2d3c561c479eeea38011588842484e140416644c))
 
 # [1.4.0](https://github.com/schedule-x/react/compare/v1.3.2...v1.4.0) (2024-01-13)
 

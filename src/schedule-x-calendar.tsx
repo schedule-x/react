@@ -5,6 +5,8 @@ import {
   CustomComponentMeta,
   CustomComponentsMeta,
 } from './types/custom-components.ts'
+import {View} from "@schedule-x/shared";
+import {isReactView, ReactViewMeta} from "./react-view/react-view.ts";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -35,6 +37,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   const [randomId, setRandomId] = useState('')
   const [customComponentsMeta, setCustomComponentsMeta] =
     useState<CustomComponentsMeta>([])
+  const [customViews, setCustomViews] = useState<ReactViewMeta[]>([])
 
   const setComponent = (component: CustomComponentMeta) => {
     setCustomComponentsMeta((prev) => {
@@ -52,6 +55,34 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     })
   }
 
+  const setView = (view: ReactViewMeta) => {
+    setCustomViews((prev) => {
+      const newViews = [...prev]
+      const existingView = newViews.find((v) => v.view.name === view.view.name)
+
+      if (existingView) {
+        return newViews
+      }
+
+      return [...newViews, view]
+    })
+  }
+
+  const removeView = (viewName: string) => {
+    setCustomViews((prev) => {
+      const newViews = [...prev]
+      const existingView = newViews.find((v) => v.view.name === viewName)
+
+      if (existingView) {
+        console.log('remove view')
+        newViews.splice(newViews.indexOf(existingView), 1)
+      }
+
+      return newViews
+    })
+
+  }
+
   useEffect(() => {
     setRandomId('sx' + Math.random().toString(36).substring(2, 11))
   }, [])
@@ -59,6 +90,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   useEffect(() => {
     if (!calendarApp) return // in SSR, calendarApp will be undefined
 
+    // Set custom components
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
@@ -67,6 +99,17 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
         createCustomComponentFn(setComponent, Component)
       )
     }
+
+    // Prepare custom view
+    //  eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    calendarApp.$app.config.views.forEach((view: View) => {
+      if (isReactView(view)) {
+        console.log(view.name)
+        view._setSetCustomViewFn(setView)
+        view._setRemoveCustomViewFn(removeView)
+      }
+    })
 
     const calendarElement = document.getElementById(randomId)
     if (!calendarElement) return
@@ -80,6 +123,10 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
         <div className="sx-react-calendar-wrapper" id={randomId}></div>
 
         {customComponentsMeta.map(({ Component, wrapperElement }) => {
+          return createPortal(Component, wrapperElement)
+        })}
+
+        {customViews.map(({ Component, wrapperElement }) => {
           return createPortal(Component, wrapperElement)
         })}
       </Fragment>
