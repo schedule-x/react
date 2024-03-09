@@ -64,7 +64,12 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
       customComponents || {}
     )) {
       calendarApp._setCustomComponentFn(
-        componentName as 'timeGridEvent' | 'dateGridEvent' | 'monthGridEvent' | 'monthAgendaEvent' | 'eventModal',
+        componentName as
+          | 'timeGridEvent'
+          | 'dateGridEvent'
+          | 'monthGridEvent'
+          | 'monthAgendaEvent'
+          | 'eventModal',
         createCustomComponentFn(setComponent, Component)
       )
     }
