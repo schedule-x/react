@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/schedule-x/react/compare/v1.19.0...v1.20.0) (2024-03-09)
+
+
+### Features
+
+* custom event modal ([#73](https://github.com/schedule-x/react/issues/73)) ([3130130](https://github.com/schedule-x/react/commit/313013032a21270eef78ba30fc4cb8e7024e20ac))
+
 # [1.19.0](https://github.com/schedule-x/react/compare/v1.18.1...v1.19.0) (2024-03-04)
 
 
