@@ -16,6 +16,7 @@ type props = {
     dateGridEvent?: ReactComponent
     monthGridEvent?: ReactComponent
     monthAgendaEvent?: ReactComponent
+    eventModal?: ReactComponent
   }
 }
 
@@ -63,7 +64,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
       customComponents || {}
     )) {
       calendarApp._setCustomComponentFn(
-        componentName as 'timeGridEvent' | 'dateGridEvent',
+        componentName as 'timeGridEvent' | 'dateGridEvent' | 'monthGridEvent' | 'monthAgendaEvent' | 'eventModal',
         createCustomComponentFn(setComponent, Component)
       )
     }
