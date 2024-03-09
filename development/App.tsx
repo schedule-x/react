@@ -11,22 +11,24 @@ import '@schedule-x/theme-default/dist/index.css'
 // import { createEventModalPlugin } from '@schedule-x/event-modal'
 // import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 // import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
-import {createReactView} from "../src/react-view/react-view.ts";
-import {addMonths, CalendarAppSingleton} from "@schedule-x/shared";
+import { createReactView } from '../src/react-view/react-view.ts'
+import { addMonths, CalendarAppSingleton } from '@schedule-x/shared'
 
 function App() {
   const listView = createReactView({
     name: 'list',
     label: 'List',
-    Component: ({ $app, id }: { $app: CalendarAppSingleton, id: string }) => {
-      return <div id={id} data-ccid={id}>
-        <h1>list view</h1>
-        <ul>
-          {$app.calendarEvents.list.value.map((event) => (
-            <li key={event.id}>{event.title}</li>
-          ))}
-        </ul>
-      </div>
+    Component: ({ $app, id }: { $app: CalendarAppSingleton; id: string }) => {
+      return (
+        <div id={id} data-ccid={id}>
+          <h1>list view</h1>
+          <ul>
+            {$app.calendarEvents.list.value.map((event) => (
+              <li key={event.id}>{event.title}</li>
+            ))}
+          </ul>
+        </div>
+      )
     },
     setDateRange: () => {},
     hasSmallScreenCompat: true,
@@ -34,7 +36,6 @@ function App() {
     backwardForwardFn: addMonths,
     backwardForwardUnits: 1,
   })
-
 
   const calendarApp = useCalendarApp({
     views: [viewMonthGrid, viewDay, viewWeek, viewMonthAgenda, listView],
@@ -71,9 +72,7 @@ function App() {
   return (
     <>
       <div>
-        <ScheduleXCalendar
-          calendarApp={calendarApp}
-        />
+        <ScheduleXCalendar calendarApp={calendarApp} />
       </div>
     </>
   )

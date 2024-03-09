@@ -1,5 +1,11 @@
-import {addDays, addMonths, CalendarAppSingleton, View, ViewConfig} from '@schedule-x/shared'
-import React, {createElement} from "react";
+import {
+  addDays,
+  addMonths,
+  CalendarAppSingleton,
+  View,
+  ViewConfig,
+} from '@schedule-x/shared'
+import React, { createElement } from 'react'
 
 export type ReactViewMeta = {
   view: ReactView
@@ -37,7 +43,9 @@ class ReactViewImpl implements ReactView {
     this.name = config.name
     this.label = config.label
     this.Component = config.Component
-    this.setDateRange = config.setDateRange as unknown as (config: unknown) => void
+    this.setDateRange = config.setDateRange as unknown as (
+      config: unknown
+    ) => void
     this.hasSmallScreenCompat = config.hasSmallScreenCompat
     this.hasWideScreenCompat = config.hasWideScreenCompat
     this.backwardForwardFn = config.backwardForwardFn
@@ -59,14 +67,16 @@ class ReactViewImpl implements ReactView {
 
   destroy(): void {
     console.log('ran destroy')
-    const elementById = document.getElementById(this.randomId);
+    const elementById = document.getElementById(this.randomId)
     if (elementById) {
       console.log('found element to remove')
       this.removeViewFn && this.removeViewFn(this.name)
     }
   }
 
-  public _setSetCustomViewFn(setComponentFn: (componentMeta: ReactViewMeta) => void) {
+  public _setSetCustomViewFn(
+    setComponentFn: (componentMeta: ReactViewMeta) => void
+  ) {
     this.setViewFn = setComponentFn
   }
 
@@ -80,5 +90,5 @@ export const createReactView = (config: ViewConfig): View => {
 }
 
 export const isReactView = (view: View): view is ReactView => {
-  return 'IS_REACT_VIEW' in view;
+  return 'IS_REACT_VIEW' in view
 }

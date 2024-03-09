@@ -5,8 +5,8 @@ import {
   CustomComponentMeta,
   CustomComponentsMeta,
 } from './types/custom-components.ts'
-import {View} from "@schedule-x/shared";
-import {isReactView, ReactViewMeta} from "./react-view/react-view.ts";
+import { View } from '@schedule-x/shared'
+import { isReactView, ReactViewMeta } from './react-view/react-view.ts'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -80,7 +80,6 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
 
       return newViews
     })
-
   }
 
   useEffect(() => {
