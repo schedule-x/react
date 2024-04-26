@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://github.com/schedule-x/react/compare/v1.32.0...v1.33.0) (2024-04-26)
+
+
+### Features
+
+* update schedule-x calendar to 1.35.0 ([#100](https://github.com/schedule-x/react/issues/100)) ([85a7893](https://github.com/schedule-x/react/commit/85a7893a2e70a17e43ed251fad42f2b0bcf0604a))
+
 # [1.32.0](https://github.com/schedule-x/react/compare/v1.31.0...v1.32.0) (2024-04-20)
 
 
