@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://github.com/schedule-x/react/compare/v1.33.0...v1.34.0) (2024-04-30)
+
+
+### Features
+
+* **deps:** update devdependencies (non-major) ([#102](https://github.com/schedule-x/react/issues/102)) ([8f22c1f](https://github.com/schedule-x/react/commit/8f22c1f3b058aa9fcc0238527fcc054489a0ddae))
+
 # [1.33.0](https://github.com/schedule-x/react/compare/v1.32.0...v1.33.0) (2024-04-26)
 
 
