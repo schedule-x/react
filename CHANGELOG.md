@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://github.com/schedule-x/react/compare/v1.34.0...v1.35.0) (2024-05-01)
+
+
+### Features
+
+* make commonjs filename use cjs extension ([#103](https://github.com/schedule-x/react/issues/103)) ([cae187b](https://github.com/schedule-x/react/commit/cae187b4ae576711f07ed4437bdec3f4f8b42791))
+
 # [1.34.0](https://github.com/schedule-x/react/compare/v1.33.0...v1.34.0) (2024-04-30)
 
 
