@@ -13,6 +13,7 @@ export default {
   input: 'src/index.tsx',
   output: [
     {
+      // deprecate with v2
       file: pJson.main,
       format: 'cjs',
       name: 'react-lib',
@@ -20,6 +21,10 @@ export default {
     {
       file: pJson.module,
       format: 'esm',
+    },
+    {
+      file: 'dist/index.cjs.js',
+      format: 'cjs',
     },
   ],
   plugins: [
