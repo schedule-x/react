@@ -22,14 +22,12 @@ describe('Custom events', () => {
 
 describe('Custom events test on mobile', () => {
   beforeEach(() => {
-    cy.visit('/cypress/pages/002-custom-events/002-custom-events.html')
+    cy.visit('/cypress/pages/002-custom-events/002-custom-events.html?view=month-agenda')
     cy.viewport('iphone-6')
   })
 
   it('should render custom events in month agenda view', () => {
-    cy.wait(1000)
     calendarHeader.openViewByLabel('Month')
-    cy.wait(1000)
     cy.contains('Event 1|ID1').should('exist')
   })
 })
