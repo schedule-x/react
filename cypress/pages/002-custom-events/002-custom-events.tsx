@@ -21,9 +21,11 @@ import CustomMonthGridEvent from './components/CustomMonthGridEvent.tsx'
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
+  const viewParamInURL = new URLSearchParams(window.location.search).get('view')
+
   const calendarApp = useCalendarApp({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
-    defaultView: viewWeek.name,
+    defaultView: viewParamInURL || 'week',
     events: [
       {
         id: '1',
