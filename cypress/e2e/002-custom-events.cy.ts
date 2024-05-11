@@ -27,7 +27,9 @@ describe('Custom events test on mobile', () => {
   })
 
   it('should render custom events in month agenda view', () => {
+    cy.wait(1000)
     calendarHeader.openViewByLabel('Month')
+    cy.wait(1000)
     cy.contains('Event 1|ID1').should('exist')
   })
 })
