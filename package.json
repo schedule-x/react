@@ -14,7 +14,7 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
-  "version": "1.38.0",
+  "version": "1.39.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
