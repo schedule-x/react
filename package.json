@@ -1,5 +1,6 @@
 {
   "name": "@schedule-x/react",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -16,6 +17,9 @@
   "types": "dist/types/index.d.ts",
   "version": "1.39.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
