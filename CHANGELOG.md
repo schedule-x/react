@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.39.1](https://github.com/schedule-x/react/compare/v1.39.0...v1.39.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* only include files relevant for usage ([#113](https://github.com/schedule-x/react/issues/113)) ([26228d4](https://github.com/schedule-x/react/commit/26228d48001d1f3c1349d330457abdc69b746d1d))
+
 # [1.39.0](https://github.com/schedule-x/react/compare/v1.38.0...v1.39.0) (2024-05-13)
 
 
