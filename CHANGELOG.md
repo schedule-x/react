@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.39.3](https://github.com/schedule-x/react/compare/v1.39.2...v1.39.3) (2024-05-17)
+
+
+### Bug Fixes
+
+* remove preact/jsx-runtime from bundle ([#115](https://github.com/schedule-x/react/issues/115)) ([7865c02](https://github.com/schedule-x/react/commit/7865c02cdf2f37f3692e37758fe5a88d4c1adfa3))
+
 ## [1.39.2](https://github.com/schedule-x/react/compare/v1.39.1...v1.39.2) (2024-05-16)
 
 
