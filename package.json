@@ -61,7 +61,7 @@
     "rollup": "^4.9.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^24.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
