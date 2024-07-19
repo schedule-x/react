@@ -6,7 +6,7 @@ import {
 import { useEffect, useState } from 'react'
 
 export function useCalendarApp(config: CalendarConfig) {
-  const [calendarApp] = useState(createCalendar(config))
+  const [calendarApp] = useState(() => createCalendar(config))
   return calendarApp
 }
 
