@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.50.1](https://github.com/schedule-x/react/compare/v1.50.0...v1.50.1) (2024-07-19)
+
+
+### Bug Fixes
+
+* prevent losing calendar instance on rerenders ([#153](https://github.com/schedule-x/react/issues/153)) ([7b6db07](https://github.com/schedule-x/react/commit/7b6db07720732bcc8b88025e0219f4b6a1405c8d))
+
 # [1.50.0](https://github.com/schedule-x/react/compare/v1.49.0...v1.50.0) (2024-07-12)
 
 
