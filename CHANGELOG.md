@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.57.1](https://github.com/schedule-x/react/compare/v1.57.0...v1.57.1) (2024-08-09)
+
+
+### Bug Fixes
+
+* update schedule-x monorepo packages to v1.58.1 ([#166](https://github.com/schedule-x/react/issues/166)) ([a9991df](https://github.com/schedule-x/react/commit/a9991dfd5ca15782743cdd78e3075cd9caf405f7))
+
 # [1.57.0](https://github.com/schedule-x/react/compare/v1.56.1...v1.57.0) (2024-08-09)
 
 
