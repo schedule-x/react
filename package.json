@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "rollup -c",
+    "build": "rollup -c && npm run build:dts",
+    "build:dts": "node scripts/build-declarations.mjs",
     "test": "./node_modules/.bin/cypress run",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 5",
     "preview": "vite preview",
