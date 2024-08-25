@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.58.1](https://github.com/schedule-x/react/compare/v1.58.0...v1.58.1) (2024-08-25)
+
+
+### Bug Fixes
+
+* type declarations ([#171](https://github.com/schedule-x/react/issues/171)) ([3331e76](https://github.com/schedule-x/react/commit/3331e76a1657b535ee31986350e5b2d8b5fcbc30))
+
 # [1.58.0](https://github.com/schedule-x/react/compare/v1.57.1...v1.58.0) (2024-08-24)
 
 
