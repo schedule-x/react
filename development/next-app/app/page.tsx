@@ -10,9 +10,8 @@ import {
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
-import {createEventsServicePlugin} from "@schedule-x/events-service";
-import {useState} from "react";
-
+import { createEventsServicePlugin } from '@schedule-x/events-service'
+import { useState } from 'react'
 
 export default function Home() {
   const eventsServicePlugin = useState(createEventsServicePlugin())[0]

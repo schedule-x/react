@@ -17,6 +17,11 @@ type props = {
     monthGridEvent?: ReactComponent
     monthAgendaEvent?: ReactComponent
     eventModal?: ReactComponent
+    headerContentLeftPrepend?: ReactComponent
+    headerContentLeftAppend?: ReactComponent
+    headerContentRightPrepend?: ReactComponent
+    headerContentRightAppend?: ReactComponent
+    headerContent?: ReactComponent
   }
 }
 
@@ -69,7 +74,12 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
           | 'dateGridEvent'
           | 'monthGridEvent'
           | 'monthAgendaEvent'
-          | 'eventModal',
+          | 'eventModal'
+          | 'headerContentLeftPrepend'
+          | 'headerContentLeftAppend'
+          | 'headerContentRightPrepend'
+          | 'headerContentRightAppend'
+          | 'headerContent',
         createCustomComponentFn(setComponent, Component)
       )
     }
