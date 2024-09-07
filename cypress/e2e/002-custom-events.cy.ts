@@ -22,7 +22,9 @@ describe('Custom events', () => {
 
 describe('Custom events test on mobile', () => {
   beforeEach(() => {
-    cy.visit('/cypress/pages/002-custom-events/002-custom-events.html?view=month-agenda')
+    cy.visit(
+      '/cypress/pages/002-custom-events/002-custom-events.html?view=month-agenda'
+    )
     cy.viewport('iphone-6')
   })
 

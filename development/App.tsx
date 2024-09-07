@@ -57,6 +57,7 @@ function App() {
             monthAgendaEvent: CustomDateGridEvent,
             monthGridEvent: CustomDateGridEvent,
             eventModal: CustomEventModal,
+            headerContent: () => (<>Custom header</>),
           }}
         />
       </div>
