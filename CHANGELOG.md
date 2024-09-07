@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.62.0](https://github.com/schedule-x/react/compare/v1.61.0...v1.62.0) (2024-09-07)
+
+
+### Features
+
+* custom header component ([#182](https://github.com/schedule-x/react/issues/182)) ([a5f5afe](https://github.com/schedule-x/react/commit/a5f5afea56b713158668ee70ed8146669f548f00))
+
 # [1.61.0](https://github.com/schedule-x/react/compare/v1.60.0...v1.61.0) (2024-09-07)
 
 
