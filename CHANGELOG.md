@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/schedule-x/react/compare/v1.63.1...v2.0.0) (2024-09-23)
+
+
+### Features
+
+* bump schedule-x deps to v2 ([#188](https://github.com/schedule-x/react/issues/188)) ([b1d8c79](https://github.com/schedule-x/react/commit/b1d8c795d5e5ed8049764d7cc5d5a429014a7e98))
+
+
+### BREAKING CHANGES
+
+* v1 plugins do not work with v2
+* Calendar alias component deprecated, use ScheduleXCalendar instead
+
 ## [1.63.1](https://github.com/schedule-x/react/compare/v1.63.0...v1.63.1) (2024-09-13)
 
 ### Bug Fixes
