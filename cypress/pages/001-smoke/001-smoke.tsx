@@ -5,7 +5,7 @@ import '@fontsource/open-sans/700.css'
 import '@fontsource/open-sans/700-italic.css'
 import ReactDOM from 'react-dom/client'
 import React from 'react'
-import { Calendar, useCalendarApp } from '../../..'
+import { ScheduleXCalendar, useCalendarApp } from '../../..'
 import {
   viewDay,
   viewMonthAgenda,
@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className="schedule-x-calendar">
-        <Calendar calendarApp={calendarApp} />
+        <ScheduleXCalendar calendarApp={calendarApp} />
       </div>
     </>
   )
