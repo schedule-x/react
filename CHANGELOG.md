@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/schedule-x/react/compare/v2.1.1...v2.1.2) (2024-09-27)
+
+
+### Bug Fixes
+
+* remove default param for plugins ([#193](https://github.com/schedule-x/react/issues/193)) ([ea4877c](https://github.com/schedule-x/react/commit/ea4877cb15ddb71a79b265ebbd64aacacf3ca750))
+
 ## [2.1.1](https://github.com/schedule-x/react/compare/v2.1.0...v2.1.1) (2024-09-27)
 
 
