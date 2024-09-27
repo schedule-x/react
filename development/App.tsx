@@ -12,6 +12,8 @@ import { createEventModalPlugin } from '@schedule-x/event-modal'
 import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
 import CustomEventModal from './components/CustomEventModal.tsx'
+import { createEventsServicePlugin } from "@schedule-x/events-service";
+import { createCalendarControlsPlugin } from "@schedule-x/calendar-controls";
 
 function App() {
   const calendarApp = useCalendarApp({
@@ -43,8 +45,9 @@ function App() {
         end: '2023-12-23 07:00',
       },
     ],
-    plugins: [createDragAndDropPlugin(), createEventModalPlugin()],
-  })
+  }, [createDragAndDropPlugin(), createEventModalPlugin(), createEventsServicePlugin(), createCalendarControlsPlugin()])
+
+  console.log(calendarApp.eventsService.getAll())
 
   return (
     <>
