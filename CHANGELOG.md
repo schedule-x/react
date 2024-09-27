@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/schedule-x/react/compare/v2.1.0...v2.1.1) (2024-09-27)
+
+
+### Bug Fixes
+
+* add plugins param to useCalendarApp and useNextCalendarApp ([#192](https://github.com/schedule-x/react/issues/192)) ([ea6fbb1](https://github.com/schedule-x/react/commit/ea6fbb1af0061f3b13761bf2b2590baf00ca3069))
+
 # [2.1.0](https://github.com/schedule-x/react/compare/v2.0.0...v2.1.0) (2024-09-26)
 
 ### Features
