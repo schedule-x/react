@@ -6,12 +6,20 @@ import {
 import { useEffect, useState } from 'react'
 import { PluginBase } from '@schedule-x/shared'
 
-export function useCalendarApp<Plugins extends PluginBase<string>[]>(config: CalendarConfig, plugins?: Plugins) {
-  const [calendarApp] = useState(() => createCalendar<Plugins>(config, plugins || []))
+export function useCalendarApp<Plugins extends PluginBase<string>[]>(
+  config: CalendarConfig,
+  plugins?: Plugins
+) {
+  const [calendarApp] = useState(() =>
+    createCalendar<Plugins>(config, plugins || [])
+  )
   return calendarApp
 }
 
-export function useNextCalendarApp<Plugins extends PluginBase<string>[]>(config: CalendarConfig, plugins?: Plugins) {
+export function useNextCalendarApp<Plugins extends PluginBase<string>[]>(
+  config: CalendarConfig,
+  plugins?: Plugins
+) {
   const [calendarApp, setCalendarApp] = useState<CalendarApp>()
 
   useEffect(() => {

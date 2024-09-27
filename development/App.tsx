@@ -12,40 +12,48 @@ import { createEventModalPlugin } from '@schedule-x/event-modal'
 import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
 import CustomEventModal from './components/CustomEventModal.tsx'
-import { createEventsServicePlugin } from "@schedule-x/events-service";
-import { createCalendarControlsPlugin } from "@schedule-x/calendar-controls";
+import { createEventsServicePlugin } from '@schedule-x/events-service'
+import { createCalendarControlsPlugin } from '@schedule-x/calendar-controls'
 
 function App() {
-  const calendarApp = useCalendarApp({
-    views: [viewMonthGrid, viewDay, viewWeek, viewMonthAgenda],
-    selectedDate: '2023-12-22',
-    events: [
-      {
-        id: '0',
-        title: 'Event 0',
-        start: '2023-12-22',
-        end: '2023-12-22',
-      },
-      {
-        id: '1',
-        title: 'Event 1',
-        start: '2023-12-22 05:00',
-        end: '2023-12-22 07:00',
-      },
-      {
-        id: '2',
-        title: 'Event 2',
-        start: '2023-12-22 05:00',
-        end: '2023-12-22 07:00',
-      },
-      {
-        id: '3',
-        title: 'Event 3',
-        start: '2023-12-23 05:00',
-        end: '2023-12-23 07:00',
-      },
-    ],
-  }, [createDragAndDropPlugin(), createEventModalPlugin(), createEventsServicePlugin(), createCalendarControlsPlugin()])
+  const calendarApp = useCalendarApp(
+    {
+      views: [viewMonthGrid, viewDay, viewWeek, viewMonthAgenda],
+      selectedDate: '2023-12-22',
+      events: [
+        {
+          id: '0',
+          title: 'Event 0',
+          start: '2023-12-22',
+          end: '2023-12-22',
+        },
+        {
+          id: '1',
+          title: 'Event 1',
+          start: '2023-12-22 05:00',
+          end: '2023-12-22 07:00',
+        },
+        {
+          id: '2',
+          title: 'Event 2',
+          start: '2023-12-22 05:00',
+          end: '2023-12-22 07:00',
+        },
+        {
+          id: '3',
+          title: 'Event 3',
+          start: '2023-12-23 05:00',
+          end: '2023-12-23 07:00',
+        },
+      ],
+    },
+    [
+      createDragAndDropPlugin(),
+      createEventModalPlugin(),
+      createEventsServicePlugin(),
+      createCalendarControlsPlugin(),
+    ]
+  )
 
   console.log(calendarApp.eventsService.getAll())
 
