@@ -11,7 +11,7 @@ export function useCalendarApp<Plugins extends PluginBase<string>[]>(
   plugins?: Plugins
 ) {
   const [calendarApp] = useState(() =>
-    createCalendar<Plugins>(config, plugins || [])
+    createCalendar<Plugins>(config, plugins)
   )
   return calendarApp
 }
@@ -24,7 +24,7 @@ export function useNextCalendarApp<Plugins extends PluginBase<string>[]>(
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setCalendarApp(createCalendar<Plugins>(config, plugins || []))
+      setCalendarApp(createCalendar<Plugins>(config, plugins))
     }
   }, [])
 
