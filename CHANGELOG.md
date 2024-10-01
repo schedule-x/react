@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/schedule-x/react/compare/v2.1.2...v2.2.0) (2024-10-01)
+
+
+### Features
+
+* bump to 2.3.0 and add custom component ([#194](https://github.com/schedule-x/react/issues/194)) ([8fd7208](https://github.com/schedule-x/react/commit/8fd72088613a2fea3efd2b2eab2983fab432c7a2))
+
 ## [2.1.2](https://github.com/schedule-x/react/compare/v2.1.1...v2.1.2) (2024-09-27)
 
 
