@@ -10,9 +10,7 @@ export function useCalendarApp<Plugins extends PluginBase<string>[]>(
   config: CalendarConfig,
   plugins?: Plugins
 ) {
-  const [calendarApp] = useState(() =>
-    createCalendar<Plugins>(config, plugins)
-  )
+  const [calendarApp] = useState(() => createCalendar<Plugins>(config, plugins))
   return calendarApp
 }
 

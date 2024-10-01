@@ -22,6 +22,7 @@ type props = {
     headerContentRightPrepend?: ReactComponent
     headerContentRightAppend?: ReactComponent
     headerContent?: ReactComponent
+    interactiveModalAdditionalFields?: ReactComponent
   }
 }
 
