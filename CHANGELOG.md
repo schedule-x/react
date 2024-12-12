@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/schedule-x/react/compare/v2.10.0...v2.11.0) (2024-12-12)
+
+
+### Features
+
+* offer compat with react 19 ([#215](https://github.com/schedule-x/react/issues/215)) ([8eccb4a](https://github.com/schedule-x/react/commit/8eccb4a165178aad8291687f8ab560f63819037f))
+
 # [2.10.0](https://github.com/schedule-x/react/compare/v2.9.0...v2.10.0) (2024-12-10)
 
 
