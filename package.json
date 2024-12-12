@@ -32,8 +32,8 @@
   },
   "peerDependencies": {
     "@schedule-x/calendar": "^2.3.0",
-    "react": "^16.7.0 || ^17 || ^18",
-    "react-dom": "^16.7.0 || ^17 || ^18"
+    "react": "^16.7.0 || ^17 || ^18 || ^19",
+    "react-dom": "^16.7.0 || ^17 || ^18 || ^19"
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.19",
