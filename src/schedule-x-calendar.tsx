@@ -89,6 +89,10 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     if (!calendarElement) return
 
     calendarApp.render(calendarElement as HTMLElement)
+
+    return () => {
+      calendarApp.destroy()
+    }
   }, [calendarApp, customComponents, randomId])
 
   return (
