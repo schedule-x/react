@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.1](https://github.com/schedule-x/react/compare/v2.13.0...v2.13.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* use destroy method ([#223](https://github.com/schedule-x/react/issues/223)) ([38cf182](https://github.com/schedule-x/react/commit/38cf182aab253cf9ef1397e40c50a58120980ece))
+
 # [2.13.0](https://github.com/schedule-x/react/compare/v2.12.1...v2.13.0) (2025-01-06)
 
 
