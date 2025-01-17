@@ -63,11 +63,13 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     setRandomId('sx' + Math.random().toString(36).substring(2, 11))
   }, [])
 
+  const memoizedCustomComponents = React.useMemo(() => customComponents, [])
+
   useEffect(() => {
     if (!calendarApp) return // in SSR, calendarApp will be undefined
 
     for (const [componentName, Component] of Object.entries(
-      customComponents || {}
+      memoizedCustomComponents || {}
     )) {
       calendarApp._setCustomComponentFn(
         componentName as
@@ -93,7 +95,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     return () => {
       calendarApp.destroy()
     }
-  }, [calendarApp, customComponents, randomId])
+  }, [calendarApp, memoizedCustomComponents, randomId])
 
   return (
     <>
