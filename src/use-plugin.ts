@@ -16,5 +16,5 @@ export const usePlugin = <Plugin extends PluginBase<string>>(
     setPluginInstance(plugin)
   }, [])
 
-  return pluginInstance
+  return pluginInstance as Plugin
 }
