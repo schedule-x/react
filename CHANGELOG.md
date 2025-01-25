@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.1](https://github.com/schedule-x/react/compare/v2.14.0...v2.14.1) (2025-01-25)
+
+
+### Bug Fixes
+
+* improve usePlugin typing ([#230](https://github.com/schedule-x/react/issues/230)) ([4d1b5d5](https://github.com/schedule-x/react/commit/4d1b5d52f10a550e80aab9689e80b4a68f258724))
+
 # [2.14.0](https://github.com/schedule-x/react/compare/v2.13.3...v2.14.0) (2025-01-25)
 
 ### Features
