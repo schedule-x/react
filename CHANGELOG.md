@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [Conven
 
 # [2.14.0](https://github.com/schedule-x/react/compare/v2.13.3...v2.14.0) (2025-01-25)
 
-
 ### Features
 
-* use plugin hook ([#229](https://github.com/schedule-x/react/issues/229)) ([48d63e6](https://github.com/schedule-x/react/commit/48d63e68a8e56cff3de18720a0867fe5c3ea037b))
+- use plugin hook ([#229](https://github.com/schedule-x/react/issues/229)) ([48d63e6](https://github.com/schedule-x/react/commit/48d63e68a8e56cff3de18720a0867fe5c3ea037b))
 
 ## [2.13.3](https://github.com/schedule-x/react/compare/v2.13.2...v2.13.3) (2025-01-17)
 
