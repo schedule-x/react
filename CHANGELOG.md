@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/schedule-x/react/compare/v2.14.1...v2.15.0) (2025-01-27)
+
+
+### Features
+
+* update dependency @schedule-x/events-service to v2.15.1 ([#228](https://github.com/schedule-x/react/issues/228)) ([8eb3716](https://github.com/schedule-x/react/commit/8eb3716c37e61c0635f0647e425f74c68dae289a))
+
 ## [2.14.1](https://github.com/schedule-x/react/compare/v2.14.0...v2.14.1) (2025-01-25)
 
 
