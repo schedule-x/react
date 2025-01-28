@@ -45,10 +45,12 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
 
   const setComponent = (component: CustomComponentMeta) => {
     setCustomComponentsMeta((prev) => {
+      const ccid = component.wrapperElement?.dataset?.ccid
+      if (!ccid) return prev
+
       const newComponents = [...prev]
-      const ccid = component.wrapperElement.dataset.ccid
       const existingComponent = newComponents.find(
-        (c) => c.wrapperElement.dataset.ccid === ccid
+        (c) => c.wrapperElement?.dataset?.ccid === ccid
       )
 
       if (existingComponent) {
