@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.1](https://github.com/schedule-x/react/compare/v2.15.0...v2.15.1) (2025-01-28)
+
+
+### Bug Fixes
+
+* do not run set custom component fn on demounting calendar ([#231](https://github.com/schedule-x/react/issues/231)) ([90e1d2a](https://github.com/schedule-x/react/commit/90e1d2a64241a65c785b71deb39c66c558978bca))
+
 # [2.15.0](https://github.com/schedule-x/react/compare/v2.14.1...v2.15.0) (2025-01-27)
 
 
