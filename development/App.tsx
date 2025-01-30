@@ -1,25 +1,32 @@
+import '@schedule-x/theme-default/dist/index.css'
+
 import './App.css'
-import { ScheduleXCalendar, useCalendarApp } from '../src'
+
 import {
   viewDay,
   viewMonthAgenda,
   viewMonthGrid,
   viewWeek,
 } from '@schedule-x/calendar'
-import '@schedule-x/theme-default/dist/index.css'
+import { createCalendarControlsPlugin } from '@schedule-x/calendar-controls'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
 import { createEventModalPlugin } from '@schedule-x/event-modal'
-import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
+import { createEventsServicePlugin } from '@schedule-x/events-service'
+import { useState } from 'react'
+
+import { ScheduleXCalendar, useCalendarApp } from '../src'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
 import CustomEventModal from './components/CustomEventModal.tsx'
-import { createEventsServicePlugin } from '@schedule-x/events-service'
-import { createCalendarControlsPlugin } from '@schedule-x/calendar-controls'
+import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 
 function App() {
+  const [locale, setLocale] = useState('en-US')
+
   const calendarApp = useCalendarApp(
     {
       views: [viewMonthGrid, viewDay, viewWeek, viewMonthAgenda],
       selectedDate: '2023-12-22',
+      locale,
       events: [
         {
           id: '0',
@@ -60,6 +67,13 @@ function App() {
   return (
     <>
       <div>
+        <button
+          onClick={() =>
+            setLocale((locale) => (locale === 'tr-TR' ? 'en-US' : 'tr-TR'))
+          }
+        >
+          Switch Locale
+        </button>
         <ScheduleXCalendar
           calendarApp={calendarApp}
           customComponents={{
