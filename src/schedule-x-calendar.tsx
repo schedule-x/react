@@ -5,6 +5,7 @@ import {
   CustomComponentMeta,
   CustomComponentsMeta,
 } from './types/custom-components.ts'
+import { CustomComponentName } from "@schedule-x/shared";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -12,17 +13,7 @@ type ReactComponent = React.ComponentType<any>
 type props = {
   calendarApp: CalendarApp | undefined // undefined allowed to prevent errors in SSR
   customComponents?: {
-    timeGridEvent?: ReactComponent
-    dateGridEvent?: ReactComponent
-    monthGridEvent?: ReactComponent
-    monthAgendaEvent?: ReactComponent
-    eventModal?: ReactComponent
-    headerContentLeftPrepend?: ReactComponent
-    headerContentLeftAppend?: ReactComponent
-    headerContentRightPrepend?: ReactComponent
-    headerContentRightAppend?: ReactComponent
-    headerContent?: ReactComponent
-    interactiveModalAdditionalFields?: ReactComponent
+    [key in CustomComponentName]?: ReactComponent
   }
 }
 
@@ -71,18 +62,10 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
+      if (!Component) continue;
+
       calendarApp._setCustomComponentFn(
-        componentName as
-          | 'timeGridEvent'
-          | 'dateGridEvent'
-          | 'monthGridEvent'
-          | 'monthAgendaEvent'
-          | 'eventModal'
-          | 'headerContentLeftPrepend'
-          | 'headerContentLeftAppend'
-          | 'headerContentRightPrepend'
-          | 'headerContentRightAppend'
-          | 'headerContent',
+        componentName,
         createCustomComponentFn(setComponent, Component)
       )
     }
