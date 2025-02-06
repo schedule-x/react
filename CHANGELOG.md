@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/schedule-x/react/compare/v2.17.0...v2.18.0) (2025-02-06)
+
+
+### Features
+
+* enable dynamic custom components ([#237](https://github.com/schedule-x/react/issues/237)) ([e30799a](https://github.com/schedule-x/react/commit/e30799adecb578f99a569943d3e69a4ed03047d5))
+
 # [2.17.0](https://github.com/schedule-x/react/compare/v2.16.1...v2.17.0) (2025-02-04)
 
 
