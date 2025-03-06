@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.2](https://github.com/schedule-x/react/compare/v2.21.1...v2.21.2) (2025-03-06)
+
+
+### Bug Fixes
+
+* reactivity fix for react 19 ([#243](https://github.com/schedule-x/react/issues/243)) ([73b0371](https://github.com/schedule-x/react/commit/73b03718b36149445902209f4c54154d4058b08a))
+
 ## [2.21.1](https://github.com/schedule-x/react/compare/v2.21.0...v2.21.1) (2025-03-06)
 
 
