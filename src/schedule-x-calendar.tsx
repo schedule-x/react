@@ -5,7 +5,7 @@ import {
   CustomComponentMeta,
   CustomComponentsMeta,
 } from './types/custom-components.ts'
-import { CustomComponentName } from "@schedule-x/shared";
+import { CustomComponentName } from '@schedule-x/shared'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -57,12 +57,12 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }, [])
 
   useEffect(() => {
-    if (!calendarApp) return // in SSR, calendarApp will be undefined
+    if (!calendarApp) return // before useEffect runs for the first time calendarApp is null
 
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
     )) {
-      if (!Component) continue;
+      if (!Component) continue
 
       calendarApp._setCustomComponentFn(
         componentName,
