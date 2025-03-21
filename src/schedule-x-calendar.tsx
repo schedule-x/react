@@ -11,7 +11,7 @@ import { CustomComponentName } from '@schedule-x/shared'
 type ReactComponent = React.ComponentType<any>
 
 type props = {
-  calendarApp: CalendarApp | null // undefined allowed to prevent errors in SSR
+  calendarApp: CalendarApp | null
   customComponents?: {
     [key in CustomComponentName]?: ReactComponent
   }
