@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.1](https://github.com/schedule-x/react/compare/v2.23.0...v2.23.1) (2025-03-21)
+
+
+### Bug Fixes
+
+* ts error ([#248](https://github.com/schedule-x/react/issues/248)) ([17bd8a4](https://github.com/schedule-x/react/commit/17bd8a4326333dd8e2bde362ca5b995a4718a455))
+
 # [2.23.0](https://github.com/schedule-x/react/compare/v2.22.0...v2.23.0) (2025-03-20)
 
 ### Features
