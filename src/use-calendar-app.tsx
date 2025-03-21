@@ -10,7 +10,7 @@ export function useCalendarApp<Plugins extends PluginBase<string>[]>(
 
   useEffect(() => {
     setCalendarApp(createCalendar<Plugins>(config, plugins));
-  }, []); 
+  }, []);
 
   return calendarApp;
 }
@@ -19,7 +19,7 @@ export function useNextCalendarApp<Plugins extends PluginBase<string>[]>(
   config: CalendarConfig,
   plugins?: Plugins
 ) {
-  const [calendarApp, setCalendarApp] = useState<CalendarApp>()
+  const [calendarApp, setCalendarApp] = useState<CalendarApp | null>(null)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

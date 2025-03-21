@@ -55,8 +55,6 @@ function App() {
     ]
   )
 
-  console.log(calendarApp.eventsService.getAll())
-
   return (
     <>
       <div>
