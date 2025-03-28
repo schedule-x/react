@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [Conven
 
 # [2.24.0](https://github.com/schedule-x/react/compare/v2.23.1...v2.24.0) (2025-03-27)
 
-
 ### Features
 
-* **deps:** update schedule-x monorepo packages to v2.24.0 ([#250](https://github.com/schedule-x/react/issues/250)) ([617bc3a](https://github.com/schedule-x/react/commit/617bc3a849c4ff80d2e622d446f7f01621bd1ee5))
+- **deps:** update schedule-x monorepo packages to v2.24.0 ([#250](https://github.com/schedule-x/react/issues/250)) ([617bc3a](https://github.com/schedule-x/react/commit/617bc3a849c4ff80d2e622d446f7f01621bd1ee5))
 
 ## [2.23.1](https://github.com/schedule-x/react/compare/v2.23.0...v2.23.1) (2025-03-21)
 
-
 ### Bug Fixes
 
-* ts error ([#248](https://github.com/schedule-x/react/issues/248)) ([17bd8a4](https://github.com/schedule-x/react/commit/17bd8a4326333dd8e2bde362ca5b995a4718a455))
+- ts error ([#248](https://github.com/schedule-x/react/issues/248)) ([17bd8a4](https://github.com/schedule-x/react/commit/17bd8a4326333dd8e2bde362ca5b995a4718a455))
 
 # [2.23.0](https://github.com/schedule-x/react/compare/v2.22.0...v2.23.0) (2025-03-20)
 
