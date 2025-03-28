@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/schedule-x/react/compare/v2.24.0...v2.25.0) (2025-03-28)
+
+
+### Features
+
+* bump to sx v2.25 ([#251](https://github.com/schedule-x/react/issues/251)) ([7acacab](https://github.com/schedule-x/react/commit/7acacab7eba283f821f53618d3b52657600bb3bb))
+
 # [2.24.0](https://github.com/schedule-x/react/compare/v2.23.1...v2.24.0) (2025-03-27)
 
 ### Features
