@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.35.0](https://github.com/schedule-x/react/compare/v2.34.0...v2.35.0) (2025-06-28)
+
+
+### Features
+
+* **deps:** update schedule-x monorepo packages to v2.35.0 ([#272](https://github.com/schedule-x/react/issues/272)) ([0c177e0](https://github.com/schedule-x/react/commit/0c177e0dc330f07a6033640486ab9c187a8fb863))
+
 # [2.34.0](https://github.com/schedule-x/react/compare/v2.33.0...v2.34.0) (2025-06-20)
 
 
