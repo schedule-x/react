@@ -37,8 +37,8 @@ function App() {
       {
         id: '2',
         title: 'Event 2',
-        start: Temporal.ZonedDateTime.from('2023-12-14T06:00:00+09:00[Asia/Tokyo]'),
-        end: Temporal.ZonedDateTime.from('2023-12-14T08:00:00+09:00[Asia/Tokyo]'),
+        start: Temporal.PlainDate.from('2023-12-14'),
+        end: Temporal.PlainDate.from('2023-12-14'),
       },
     ],
     selectedDate: Temporal.PlainDate.from('2023-12-15'),
