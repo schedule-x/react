@@ -18,6 +18,7 @@ import CustomTimeGridEvent from './components/CustomTimeGridEvent.tsx'
 import CustomDateGridEvent from './components/CustomDateGridEvent.tsx'
 import CustomMonthAgendaEvent from './components/CustomMonthAgendaEvent.tsx'
 import CustomMonthGridEvent from './components/CustomMonthGridEvent.tsx'
+import 'temporal-polyfill/global'
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
@@ -30,17 +31,18 @@ function App() {
       {
         id: '1',
         title: 'Event 1',
-        start: '2023-12-15 06:00',
-        end: '2023-12-15 08:00',
+        start: Temporal.ZonedDateTime.from('2023-12-15T06:00:00+09:00[Asia/Tokyo]'),
+        end: Temporal.ZonedDateTime.from('2023-12-15T08:00:00+09:00[Asia/Tokyo]'),
       },
       {
         id: '2',
         title: 'Event 2',
-        start: '2023-12-14',
-        end: '2023-12-14',
+        start: Temporal.PlainDate.from('2023-12-14'),
+        end: Temporal.PlainDate.from('2023-12-14'),
       },
     ],
-    selectedDate: '2023-12-15',
+    selectedDate: Temporal.PlainDate.from('2023-12-15'),
+    timezone: 'Asia/Tokyo',
   })
 
   return (
