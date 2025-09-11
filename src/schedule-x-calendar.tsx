@@ -1,11 +1,12 @@
 import { CalendarApp } from '@schedule-x/calendar'
-import React, { createElement, Fragment, useEffect, useState } from 'react'
+import React, { createElement, Fragment, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import {
   CustomComponentMeta,
   CustomComponentsMeta,
 } from './types/custom-components.ts'
 import { CustomComponentName } from '@schedule-x/shared'
+import { flushSync } from 'react-dom';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ReactComponent = React.ComponentType<any>
@@ -30,7 +31,7 @@ const createCustomComponentFn =
   }
 
 export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
-  const [randomId, setRandomId] = useState('')
+  const randomId = useRef('')
   const [customComponentsMeta, setCustomComponentsMeta] =
     useState<CustomComponentsMeta>([])
 
@@ -53,11 +54,25 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
   }
 
   useEffect(() => {
-    setRandomId('sx' + Math.random().toString(36).substring(2, 11))
+    randomId.current = 'sx' + Math.random().toString(36).substring(2, 11)
   }, [])
 
   useEffect(() => {
     if (!calendarApp) return // before useEffect runs for the first time calendarApp is null
+
+    calendarApp._setDestroyCustomComponentInstance((ccid) => {
+      flushSync(() => {
+        setCustomComponentsMeta((prev) => {
+          const targetComponent = prev.find((component) => component.wrapperElement.dataset.ccid === ccid)
+
+          if (targetComponent) {
+            targetComponent.wrapperElement.remove()
+          }
+
+          return prev.filter((component) => component.wrapperElement.dataset.ccid !== ccid)
+        })
+      })
+    })
 
     for (const [componentName, Component] of Object.entries(
       customComponents || {}
@@ -70,7 +85,7 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
       )
     }
 
-    const calendarElement = document.getElementById(randomId)
+    const calendarElement = document.getElementById(randomId.current)
     if (!calendarElement) return
 
     calendarApp.render(calendarElement as HTMLElement)
@@ -78,12 +93,12 @@ export function ScheduleXCalendar({ calendarApp, customComponents }: props) {
     return () => {
       calendarApp.destroy()
     }
-  }, [calendarApp, customComponents, randomId])
+  }, [calendarApp, customComponents, randomId.current])
 
   return (
     <>
       <Fragment>
-        <div className="sx-react-calendar-wrapper" id={randomId}></div>
+        <div className="sx-react-calendar-wrapper" id={randomId.current}></div>
 
         {customComponentsMeta.map(({ Component, wrapperElement }) => {
           return createPortal(Component, wrapperElement)

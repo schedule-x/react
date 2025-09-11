@@ -16,6 +16,14 @@ import { createEventsServicePlugin } from '@schedule-x/events-service'
 import { createCalendarControlsPlugin } from '@schedule-x/calendar-controls'
 import 'temporal-polyfill/global'
 
+const customComponents = {
+  timeGridEvent: CustomTimeGridEvent,
+  dateGridEvent: CustomDateGridEvent,
+  monthAgendaEvent: CustomDateGridEvent,
+  monthGridEvent: CustomDateGridEvent,
+ 
+}
+
 function App() {
   const calendarApp = useCalendarApp(
     {
@@ -23,12 +31,12 @@ function App() {
       selectedDate: Temporal.PlainDate.from('2023-12-22'),
       timezone: 'Asia/Tokyo',
       events: [
-        {
+        /* {
           id: '0',
           title: 'Event 0',
           start: Temporal.PlainDate.from('2023-12-22'),
           end: Temporal.PlainDate.from('2023-12-22'),
-        },
+        }, */
         {
           id: '1',
           title: 'Event 1',
@@ -62,14 +70,7 @@ function App() {
       <div>
         <ScheduleXCalendar
           calendarApp={calendarApp}
-          customComponents={{
-            timeGridEvent: CustomTimeGridEvent,
-            dateGridEvent: CustomDateGridEvent,
-            monthAgendaEvent: CustomDateGridEvent,
-            monthGridEvent: CustomDateGridEvent,
-            eventModal: CustomEventModal,
-            headerContent: () => <>Custom header</>,
-          }}
+          customComponents={customComponents}
         />
       </div>
     </>
