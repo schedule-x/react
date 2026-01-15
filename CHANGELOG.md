@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/schedule-x/react/compare/v3.7.0...v4.0.0) (2026-01-15)
+
+
+### Features
+
+* **deps:** update schedule-x monorepo packages to v4 ([#306](https://github.com/schedule-x/react/issues/306)) ([79ad2a7](https://github.com/schedule-x/react/commit/79ad2a7c98649692dc510ef5aab2ffb5d5448d68))
+
+
+### BREAKING CHANGES
+
+* **deps:** update dep @schedule-x/calendar to v4
+
 # [3.7.0](https://github.com/schedule-x/react/compare/v3.6.0...v3.7.0) (2026-01-11)
 
 
